@@ -1,5 +1,7 @@
 
-
+/*******************************
+ Script for onScroll sticky navbar
+ **********************************/
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {
@@ -7,40 +9,59 @@ $(document).ready(function () {
         } else {
             $('.navbar').removeClass("sticky");
         }
+
+        /*****************************
+         Script for scroll-up hide/show
+         ******************************/
         if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
         } else {
             $('.scroll-up-btn').removeClass("show");
         }
     });
-  
 
-    $('.navbar .menu li a').click(function () {
-        /*onClick smooth Scrol*/
-        $('html').css("scrollBehavior", "smooth");
-    });
-      var typed = new Typed(".typing-2", {
-        strings: ["Backend Developer","a Full Stack Web Developer", " a Java Developer", "an AI Specialist", "an  Electrical Engineer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-    $('.menu-btn').click(function () {
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
-    var typed = new Typed(".typing", {
-        strings: [ "Backend Developer","a Full Stack Web Developer", " a Java Developer", "an AI Specialist",  "an  Electrical Engineer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
+    /**************************
+     Script for Slide-up
+     ************************88*/
     $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 });
         /*  onclick smooth scroll removing */
         $('html').css("scrollBehavior", "auto");
     });
+
+    $('.navbar .menu li a').click(function () {
+        /*onClick smooth Scrol*/
+        $('html').css("scrollBehavior", "smooth");
+    });
+
+    /*************************
+    Script for navbar/toggle menu
+    *****************************/
+    $('.menu-btn').click(function () {
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
+    /****************************
+    Script for animation  of typ..text
+    **********************************/
+    var typed = new Typed(".typing", {
+        strings: [ "Backend Developer","a Full Stack Web Developer", " a Java Developer", ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Backend Developer","a Full Stack Web Developer", " a Java Developer",],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    /*********************
+    Script for owl carousel
+    ************************/
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,

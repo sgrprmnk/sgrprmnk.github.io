@@ -1,4 +1,6 @@
-
+/************** 
+ Google fonts
+***************/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@1,400;1,500;1,700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -10,6 +12,10 @@
 html{
     scroll-behavior: smooth;
 }
+
+/*****************
+ custom scroll-bar
+*******************/
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -23,6 +29,10 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+/******************************** 
+    other similar content 
+**********************************/
 section{
     padding: 100px 0;
 }
@@ -72,6 +82,10 @@ section .title::after{
     background: white;
     transform: translateX(-50%);
 }
+
+/****************
+     navbar 
+ ****************/
 .navbar{
     position: fixed;
     width: 100%;
@@ -119,6 +133,10 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: rgb(138, 247, 28);
 }
+
+/**************** 
+    menu btn
+*****************/
 .menu-btn{
     color: rgb(127, 226, 14);
     font-size: 23px;
@@ -152,6 +170,12 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
+
+
+/*******************
+    home section 
+*********************/
+
 .home{
     
     display: flex;
@@ -171,25 +195,25 @@ section .title::after{
   margin-right: 0;
 }
 .home .home-content .text-1{
-    font-size: 18px;
+    font-size: 24px;
     color:#111;
   
 }
 .home .home-content .text-2{
-    font-size: 30px;
+    font-size: 42px;
     font-weight: 201;
     margin-left: -4px;
     color:#111;
 }
 .home .home-content .text-3{
-    font-size: 20px;
+    font-size: 30px;
     margin: 5px 0;
     color: #111;
 }
 .home .home-content .text-3 span{
     color:rgb(127, 226, 14);
     font-weight: 300;
-    font-size: 20px;
+    font-size: 30px;
 }
 .home .home-content a{
     display: inline-block;
@@ -207,6 +231,10 @@ section .title::after{
     /* color: rgb(133, 220, 20); */
     background: rgb(113, 201, 10);
 }
+
+/********************* 
+    about section
+**********************/
 .about .title::after{
     content: "";
 }
@@ -226,6 +254,24 @@ section .title::after{
     place-items: center;
     background: linear-gradient(375deg, #1cc7d0, #2ede98);
   } */
+  #aboutul{
+    margin-left: 50px;
+    list-style: none;
+    
+  }
+  .trialright{
+    background-color:#1cc7d0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-overflow: clip;
+    color: #fff;
+    margin-right: 10px;
+font-weight: bolder;
+  }
+  /* .aboutvdo{
+    margin-left: 50px;
+  } */
   ::selection{
     color: #fff;
     background: #1cc7d0;
@@ -236,6 +282,7 @@ section .title::after{
     position: relative;
     transform-style: preserve-3d;
    perspective: 1000px;
+   cursor: pointer;
   }
   .wrapper .card{
     position: absolute;
@@ -342,6 +389,15 @@ section .title::after{
     /* color: rgb(133, 220, 20); */
     background: rgb(113, 201, 10);
 }
+
+
+
+
+
+/********************* 
+   skills section 
+***********************/
+
 .skills .title::after{
     content: "Highlight";
 }
@@ -413,11 +469,15 @@ section .title::after{
 }
 
 .skills-content .right .AI::before{
-    width: 70%;
+    width: 80%;
 }
 .skills-content .right .Quantum::before{
-    width: 70%;
+    width: 93%;
 }
+/*********************** 
+    services section 
+     & Testimonial
+************************/
 .services, .teams{
     color:rgb(0, 0, 0);
     background: rgb(245, 234, 234);
@@ -462,6 +522,9 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+/*********************
+    contact section  
+***********************/
 .contact .title::after{
     content: "visit again";
 }
@@ -558,6 +621,9 @@ section .title::after{
   /* color:rgb(133, 220, 20); */
   background:rgb(87, 186, 8);
 }
+/*********************
+    footer section
+**********************/
 /* footer{
     background: rgb(223, 209, 209);
     padding: 15px 23px;
@@ -572,6 +638,10 @@ footer span a:hover{
     text-decoration: underline;
 } */
 
+
+/***************************
+      responsive media  
+******************************/
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -697,6 +767,47 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+/* Map */
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 300px;
+    width: 500px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 300px;
+    width: 500px;
+}
+.head-contact button{
+    /* color: #fff; */
+   
+ margin: 7px;
+border: none;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+   transition: 0.5s;
+position: relative;
+    overflow: hidden;
+    background-color: rgb(197, 191, 202);
+}
+.head-contact button:hover{
+    
+    background-color: #f1f1f1;
+}
+.project-img img{
+width: 300px;
+height: 200px;
+}
+
+.project-btn button{
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+    margin: 5px;
 }
 -------
 table {
