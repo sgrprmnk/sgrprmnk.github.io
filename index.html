@@ -246,11 +246,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Sagar and I'm <span class="typing-2"></span></div>
-                    <!-- <video width="320" height="240" controls autoplay> 
-                        <source src="Introduction - Made with Clipchamp (1).mp4" type="video/mp4">
-                    
-                        Your browser does not support the video tag.
-                    </video> -->
+            
 
                     <!-- <p> My name is Sagar Pramanik and I belongs to West Bengal, India. I have graduated from Maulana
                         Abul Kalam Azad University of Technology in Electrical Engineering.
@@ -321,7 +317,8 @@
                         </li>
                     </ul> -->
                     <!-- <a href="Sagar-Pramanik-Resume.pdf" alt="cv" class="btn-1 outer-shadow hover-in-shadow" download="">Download Resume</a> -->
-                    <a href="https://drive.google.com/u/0/uc?id=1qlnZngjm58hPCue2YMRwD3q_qAvmWOqd&export=download" target="_top" alt="cv" class="btn-1 outer-shadow hover-in-shadow" download="">Download Resume</a>
+                    <a href="https://drive.google.com/u/0/uc?id=1qlnZngjm58hPCue2YMRwD3q_qAvmWOqd&export=download" target="_top" alt="cv"
+                        class="btn-1 outer-shadow hover-in-shadow" download="">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -487,9 +484,52 @@
         </div>
         </div>
     </section>
+<!-- Github Stats -->
 
-
-
+<section class="contact" id="contact" style="margin-bottom: 0px; padding-bottom: 0px;">
+    <div class="max-width">
+        <h2 class="title1">Github stats:</h2>
+        <div class="contact-content">
+            
+<div class="column left1">
+        <div >
+                 
+                    
+                    
+                    <p>&nbsp;<img align="center"
+                            src="https://github-readme-stats.vercel.app/api?username=sgrprmnk&show_icons=true&locale=en&hide_border=true&count_private=true"
+                            alt="sgrprmnk" />
+                    </p>
+        </div>
+        </div>
+        <div>
+            </div>
+            <div class="column right1">
+            <p><img align="center"
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=sgrprmnk&hide_border=true&count_private=true"
+                    alt="sgrprmnk" /></p>
+                
+            </div>
+            </div>
+</section>
+<section class="contact" id="contact" style="margin-bottom: 0px; margin-top: 2px; padding-top: 2px;">
+    <div class="max-width">
+        <h2 class="title1">Github calendar:</h2>
+        <div class="contact-content">
+                        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+                        </script>
+                        
+                        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+                        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+                        
+                        <!-- Prepare a container for your calendar. -->
+                        <div class="calendar">
+                            <!-- Loading stuff -->
+                            Loading the data just for you.
+                        </div>
+        </div>
+        </div>
+</section>
     <!----------------------- 
         contact section 
     -------------------------->
@@ -591,5 +631,17 @@
     <script src="script.js">
     </script>
 </body>
+<script>
+    GitHubCalendar(".calendar", "sgrprmnk");
 
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "sgrprmnk", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "sgrprmnk", {
+        proxy(username) {
+            return fetch(`https://your-proxy.com/github?user=${sgrprmnk}`)
+        }
+    }).then(r => r.text())
+</script>
 </html>
