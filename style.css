@@ -574,6 +574,13 @@ section .title::after {
 .teams .title::before {
     background: rgb(0, 0, 0);
 }
+/* #heroimage{
+    margin-left: 60px;
+} */
+#heroimage img{
+padding: 3px;
+margin: 3px;
+}
 
 .services .title::after,
 .teams .title::after {
