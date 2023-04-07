@@ -109,7 +109,11 @@ section .title::after {
 /****************
      navbar 
  ****************/
+
+
+
 .navbar {
+    overflow: hidden;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -119,6 +123,8 @@ section .title::after {
 }
 
 .navbar.sticky {
+    overflow: hidden;
+    position: fixed;
     padding: 15px 0;
     background: rgb(255, 255, 255);
 }
@@ -130,6 +136,7 @@ section .title::after {
 }
 
 .navbar .logo a {
+
     color: rgb(0, 0, 0);
     font-size: 35px;
     font-weight: 600;
@@ -145,6 +152,8 @@ section .title::after {
 }
 
 .navbar .menu li {
+
+
     list-style: none;
     display: inline-block;
 }
@@ -206,6 +215,66 @@ section .title::after {
     filter: brightness(90%);
 }
 
+/***********************
+        Analytics 
+ ************************/
+#statictics {
+    padding: 50px 0;
+}
+
+.statictics-container {
+    /* background-color: black; */
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 2rem 0;
+}
+
+.static-heading {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.radius p {
+    font-size: 25px;
+}
+
+.static-section {
+    /* margin-top: 50px; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s ease;
+}
+
+.static-section :hover {
+    transform: scaleX(1.1) rotateX(360deg);
+}
+
+.static-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radius {
+    border: 5px solid rgb(127, 226, 14);
+    ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*******************
     home section 
@@ -564,6 +633,11 @@ section .title::after {
     services section 
      & Testimonial
 ************************/
+#heroimage img {
+    margin: 3px;
+    padding: 3px;
+}
+
 .services,
 .teams {
     color: rgb(0, 0, 0);
@@ -573,13 +647,6 @@ section .title::after {
 .services .title::before,
 .teams .title::before {
     background: rgb(0, 0, 0);
-}
-/* #heroimage{
-    margin-left: 60px;
-} */
-#heroimage img{
-padding: 3px;
-margin: 3px;
 }
 
 .services .title::after,
@@ -918,6 +985,36 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+
+/* Analytics */
+@media all and (min-width: 100px) and (max-width: 767px) {
+    .project-main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .statictics-container {
+        /*  background-color: black; */
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .calendar {
+        font-family: Helvetica, arial;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        min-height: 243px;
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
