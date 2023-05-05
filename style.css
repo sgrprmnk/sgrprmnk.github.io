@@ -697,7 +697,7 @@ section .title::after {
     contact section  
 ***********************/
 .contact .title::after {
-    content: "visit again";
+    content: "let's connect";
 }
 
 .contact .contact-content .column {
